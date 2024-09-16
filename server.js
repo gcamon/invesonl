@@ -19,7 +19,7 @@ var express = require('express'),
   //router = express.Router(),
   http = require('http').Server(app),
   //moment = require('moment'),
-  port = process.env.PORT || 3005;
+  port = 3005;
 
 
 var options = {
