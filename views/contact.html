@@ -1,0 +1,50 @@
+
+<html>
+<head>
+    <title></title>
+<script type="module">
+  window.RUM_BASE = window.origin;
+  import { sampleRUM } from '/.rum/@adobe/helix-rum-js@%5E2/src/index.js';
+  window.hlx = window.hlx || {};
+  window.hlx.sampleRUM = sampleRUM;
+  sampleRUM();
+</script></head>
+    <body>
+    <h1></h1>
+    <table>
+        <tbody>
+            <tr>
+                <td>Status</td>
+                <td><div id="Status">422</div></td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td><div id="Message">invalid payload</div></td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td><a href="https://www.investec.com/en_int/welcome-to-investec/contact-us" id="Location">https://www.investec.com/en_int/welcome-to-investec/contact-us</a></td>
+            </tr>
+            <tr>
+                <td>Parent Location</td>
+                <td><a href="https://www.investec.com/en_int/welcome-to-investec" id="ParentLocation">https://www.investec.com/en_int/welcome-to-investec</a></td>
+            </tr>
+            <tr>
+                <td>Path</td>
+                <td><div id="Path">/content/dotcom/en_int/welcome-to-investec/contact-us</div></td>
+            </tr>
+            <tr>
+                <td>Referer</td>
+                <td><div id="Referer"></div></td>
+            </tr>
+            <tr>
+                <td>ChangeLog</td>
+                <td><div id="ChangeLog">&lt;pre&gt;&lt;/pre&gt;</div></td>
+            </tr>
+        </tbody>
+    </table>
+    <p><a href="https://www.investec.com/en_int/welcome-to-investec/contact-us">Modified Resource</a></p>
+    <p><a href="https://www.investec.com/en_int/welcome-to-investec">Parent of Modified Resource</a></p>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8c74e7d88bdd9e90","version":"2024.8.0","serverTiming":{"name":{"cfExtPri":true,"cfL4":true}},"token":"1b3746197d734e6db43b2ce8bc8dc57e","b":1}' crossorigin="anonymous"></script>
+</body>
+</html>

